@@ -1,11 +1,16 @@
 .App {
-  background-color: #282c34;
+  background-color: #f3f3f3;
 }
 
 .layout {
   width: 1240px;
   margin: auto;
   padding-bottom: 200px;
+}
+
+.layout__manifest { 
+  padding-top: 96px;
+  margin-bottom: 72px;
 }
 
 .section {
@@ -15,30 +20,15 @@
   display: grid;
 }
 
-.col {
-
-}
-
 .subtitle {
   font-size: 40px;
-  color: #fff;
+  color: #000;
   margin-bottom: 40px;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {

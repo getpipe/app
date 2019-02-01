@@ -1,3 +1,17 @@
 .footer {
-  
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 96px;
+    display: grid;
 }
+
+.footer__copiright {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.footer__info {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 96px;
+    display: grid;
+}
+

@@ -1,3 +1,9 @@
 .task-section {
-  
+    margin-bottom: 96px;
+}
+
+.task-section__title {
+    font-size: 32px;
+    margin-bottom: 32px;
+    font-weight: bold;
 }

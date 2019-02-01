@@ -10,17 +10,28 @@ class App extends Component {
     return (
       <div className="App">
 
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-        </header>
-
-        <Manifest></Manifest>
         <div className="layout">
-          <div class="subtitle">Most popular</div>
-          <TaskSection></TaskSection>
-        </div>
-        <Footer></Footer>
 
+          <div className="layout__tabs">
+              <div className="tabs">
+                <div class="tabs__item"></div>
+              </div>
+          </div>
+
+          <div className="layout__manifest">
+              <Manifest></Manifest>
+          </div>
+
+          <div className="layout__tasks">
+            <TaskSection></TaskSection>
+          </div>
+
+          <div className="layout__footer">
+            <Footer></Footer>
+          </div>
+          
+        </div>
+        
       </div>
     );
   }

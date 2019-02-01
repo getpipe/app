@@ -1,0 +1,49 @@
+.top {
+  background: #E1E6D3;
+  padding: 40px;
+}
+
+.top__type {
+  font-size: 13px;
+  color: #fff;
+  background:rgb(0, 152, 95);
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.top__date {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 16px;
+}
+
+.top__author {
+  margin-bottom: 16px;
+  color: rgb(0, 112, 240);
+}
+
+.top__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.top__decription {
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+.top__controls {
+
+}
+
+.top__send {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ddd;
+  border-radius: 4px;
+}
