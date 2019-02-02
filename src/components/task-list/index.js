@@ -1,67 +1,61 @@
-import React, { Component } from 'react';
-import Task from '../task';
-import './style.css'
+import React, { Component } from "react";
+import Task from "../task";
+import "./style.css";
+import axios from "axios";
 
-let tasks = [
-  { 
-    type: 'Интерфейсная', 
-    date: '10 февраля',
-    author: 'Вадим Макеев',
-    title: 'Описать в ридми как завести сайт локально',
-    description: 'На самом деле, всё расписать в #68, а оттуда уже взять выжимку про запуск и тесты для ридми. А там ещё нужно про перезагрузку, тесты, линтер.',
-    id: '1'
-  },
-  { 
-    type: 'Интерфейсная', 
-    date: '10 февраля',
-    author: 'Вадим Макеев',
-    title: 'Описать в ридми как завести сайт локально',
-    description: 'На самом деле, всё расписать в #68, а оттуда уже взять выжимку про запуск и тесты для ридми. А там ещё нужно про перезагрузку, тесты, линтер.',
-    id: '2'
-  },
-  { 
-    type: 'Интерфейсная', 
-    date: '10 февраля',
-    author: 'Вадим Макеев',
-    title: 'Описать в ридми как завести сайт локально',
-    description: 'На самом деле, всё расписать в #68, а оттуда уже взять выжимку про запуск и тесты для ридми. А там ещё нужно про перезагрузку, тесты, линтер.',
-    id: '3'
-  },
-  { 
-    type: 'Интерфейсная', 
-    date: '10 февраля',
-    author: 'Вадим Макеев',
-    title: 'Описать в ридми как завести сайт локально',
-    description: 'На самом деле, всё расписать в #68, а оттуда уже взять выжимку про запуск и тесты для ридми. А там ещё нужно про перезагрузку, тесты, линтер.',
-    id: '4'
+// конфиг для авторизации в git api
+const config = {
+  headers: {
+    Accept: "application/vnd.github.inertia-preview+json",
+    Authorization: "insert token here"
   }
-];
+};
 
 class TaskList extends Component {
   state = {
-    items: tasks
+    items: []
+  };
+
+  componentWillMount() {
+    // просим у api карточки с доски https://github.com/orgs/whitepapertools/projects/3#column-3318855
+    axios
+      .get("https://api.github.com/projects/columns/3318855/cards", config)
+      .then(response => {
+        // достаем из ответа нужные нам поля
+        const tasks = response.data.map(item => {
+          return {
+            type: "",
+            date: item["created_at"],
+            author: item["creator"]["login"],
+            title: "У карт нет заголовка :)",
+            description: item["note"],
+            id: item["id"]
+          };
+        });
+        this.setState({ items: tasks });
+      });
   }
+
   render() {
-    let tsks = this.state.items
+    let tsks = this.state.items;
     return (
-      <div class="section">
-          {tsks.map(function(tsk){
-              return (
-                <div class="col" key={tsk.id}>
-                    <Task 
-                      type={tsk.type}
-                      date={tsk.date}
-                      author={tsk.author}
-                      title={tsk.title}
-                      description={tsk.description}
-                    />
-                </div>
-              );
-          })} 
+      <div className="section">
+        {tsks.map(function(tsk) {
+          return (
+            <div className="col" key={tsk.id}>
+              <Task
+                type={tsk.type}
+                date={tsk.date}
+                author={tsk.author}
+                title={tsk.title}
+                description={tsk.description}
+              />
+            </div>
+          );
+        })}
       </div>
     );
   }
 }
 
 export default TaskList;
-
