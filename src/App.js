@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import TaskSection from "./components/task-section";
 import Manifest from "./components/manifest";
 import Footer from "./components/footer";
+import Tabs from "./components/tabs";
 //import logo from "./logo.svg";
 import "./App.css";
 
@@ -11,19 +12,14 @@ class App extends Component {
       <div className="App">
         <div className="layout">
           <div className="layout__tabs">
-            <div className="tabs">
-              <div className="tabs__item" />
-            </div>
+            <Tabs />
           </div>
-
           <div className="layout__manifest">
             <Manifest />
           </div>
-
           <div className="layout__tasks">
             <TaskSection />
           </div>
-
           <div className="layout__footer">
             <Footer />
           </div>

@@ -4,30 +4,27 @@ import "./style.css";
 
 let tasks = [
   {
-    type: "Интерфейсная!!!!",
+    type: "text",
     date: "10 февраля",
     author: "Вадим Макеев",
-    title: "Описать в ридми как завести сайт локально",
-    description:
-      "На самом деле, всё расписать в #68, а оттуда уже взять выжимку про запуск и тесты для ридми. А там ещё нужно про перезагрузку, тесты, линтер.",
+    title: "Add new data sources to Ossert: Reddit",
+    description: "We need to come up with a new API for PostCSS plugins - so that they all work together, in one cycle of walking through the AST tree. The task is difficult. It is less about code and more about negotiation, analysis and architecture. But it gives the maximum amount of experience. Advantage: to become one of the leading committers of PostCSS, add to the resume a line on the development of competent architecture in a global project.",
     id: "1"
   },
   {
-    type: "Интерфейсная",
+    type: "frontend",
     date: "10 февраля",
     author: "Вадим Макеев",
-    title: "Описать в ридми как завести сайт локально",
-    description:
-      "На самом деле, всё расписать в #68, а оттуда уже взять выжимку про запуск и тесты для ридми. А там ещё нужно про перезагрузку, тесты, линтер.",
+    title: "Event architecture PostCSS",
+    description: "We need to come up with a new API for PostCSS plugins - so that they all work together, in one cycle of walking through the AST tree. The task is difficult. It is less about code and more about negotiation, analysis and architecture. But it gives the maximum amount of experience. But it gives the maximum amount of experience.",
     id: "2"
   },
   {
-    type: "Интерфейсная",
+    type: "design",
     date: "10 февраля",
     author: "Вадим Макеев",
-    title: "Описать в ридми как завести сайт локально",
-    description:
-      "На самом деле, всё расписать в #68, а оттуда уже взять выжимку про запуск и тесты для ридми. А там ещё нужно про перезагрузку, тесты, линтер.",
+    title: "Add new data sources to Ossert: Reddit",
+    description: "We need to come up with a new API for PostCSS plugins - so that they all work together, in one cycle of walking through the AST tree. The task is difficult. It is less about code and more about negotiation, analysis and architecture. But it gives the maximum amount of experience. Advantage: to become one of the leading committers of PostCSS, add to the resume a line on the development of competent architecture in a global project.",
     id: "3"
   }
 ];
