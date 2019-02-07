@@ -2,8 +2,12 @@
   background-color: #f3f3f3;
 }
 
+.App__footer {
+  padding-top: 100px;
+}
+
 .layout {
-  width: 1140px;
+  width: 1171px;
   margin: auto;
   padding-bottom: 200px;
 }
@@ -13,33 +17,19 @@
   margin-bottom: 72px;
 }
 
+.layout__tabs { 
+  padding-top: 96px;
+}
+
 .section {
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-row-gap: 32px;
-  grid-column-gap: 32px;
   display: grid;
+  grid-template-columns: 369px 369px 369px;
+  grid-row-gap: 36px;
+  grid-column-gap: 32px;
 }
 
 .subtitle {
   font-size: 40px;
   color: #000;
   margin-bottom: 40px;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

@@ -1,6 +1,11 @@
 .task {
   background: #fff;
   padding: 40px;
+  height: 515px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .task__type {
@@ -32,7 +37,8 @@
 
 .task__decription {
   font-size: 15px;
-  margin-bottom: 16px;
+  height: 200px;
+  overflow: hidden;
 }
 
 .task__controls {

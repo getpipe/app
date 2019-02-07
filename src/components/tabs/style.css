@@ -1,3 +1,17 @@
 .tabs {
-  
+  display: flex;
+}
+
+.tabs__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 50px;
+}
+
+.tabs__item_state_action {
+    background: #76836C;
+    border-radius: 12px 12px 0px 0px;
+    color: #fff;
 }

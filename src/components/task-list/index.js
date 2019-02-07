@@ -7,7 +7,7 @@ import axios from "axios";
 const config = {
   headers: {
     Accept: "application/vnd.github.inertia-preview+json",
-    Authorization: "token 0392ec2c116329827ae4f904e87a8ef7bd2611c8"
+    Authorization: "token a4817cab4e2fa42eb69271efd4392cc099b4923c"
   }
 };
 
@@ -24,7 +24,7 @@ class TaskList extends Component {
         // достаем из ответа нужные нам поля
         const tasks = response.data.map(item => {
           return {
-            type: "",
+            type: "design",
             date: item["created_at"],
             author: item["creator"]["login"],
             title: "У карт нет заголовка :)",
@@ -42,8 +42,9 @@ class TaskList extends Component {
       <div className="section">
         {tsks.map(function(tsk) {
           return (
-            <div className="col" key={tsk.id}>
+            <div className="col">
               <Task
+                key={tsk.id}
                 type={tsk.type}
                 date={tsk.date}
                 author={tsk.author}

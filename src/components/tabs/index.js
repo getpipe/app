@@ -5,7 +5,8 @@ class Tabs extends Component {
   render() {
     return (
       <div className="tabs">
-        dsdsdsds
+        <div className="tabs__item tabs__item_state_action">Task</div>
+        <div className="tabs__item">Map</div>
       </div>
     );
   }
