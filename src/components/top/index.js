@@ -5,13 +5,13 @@ class Top extends Component {
   render() {
     let top = 'top';
     let top__type = 'top__type';
-    if (this.props.type == 'design') {
+    if (this.props.type === 'design') {
       top += ' top_view_design';
       top__type += ' top__type_view_design';
-    } else if (this.props.type == 'frontend') {
+    } else if (this.props.type === 'frontend') {
       top += ' top_view_frontend';
       top__type += ' top__type_view_frontend';
-    } else if (this.props.type == 'text') {
+    } else if (this.props.type === 'text') {
       top += ' top_view_text';
       top__type += ' top__type_view_text';
     } else {

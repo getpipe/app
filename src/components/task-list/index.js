@@ -7,7 +7,7 @@ import axios from "axios";
 const config = {
   headers: {
     Accept: "application/vnd.github.inertia-preview+json",
-    Authorization: "token a4817cab4e2fa42eb69271efd4392cc099b4923c"
+    Authorization: "token 39dd006022acd405fad811170d7b5d9e3bb26295"
   }
 };
 

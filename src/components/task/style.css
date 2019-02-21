@@ -1,44 +1,44 @@
 .task {
-  background: #fff;
-  padding: 40px;
-  height: 515px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+	background: #fff;
+	padding: 40px;
+	height: 515px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .task__type {
-  font-size: 13px;
-  color: #fff;
-  background:rgb(0, 152, 95);
-  margin-bottom: 16px;
-  padding: 8px 16px;
-  display: inline-block;
-  border-radius: 3px;
+	font-size: 13px;
+	color: #fff;
+	background:rgb(0, 152, 95);
+	margin-bottom: 16px;
+	padding: 8px 16px;
+	display: inline-block;
+	border-radius: 3px;
 }
 
 .task__date {
-  font-size: 15px;
-  color: rgba(0, 0, 0, 0.6);
-  margin-bottom: 16px;
+	font-size: 15px;
+	color: rgba(0, 0, 0, 0.6);
+	margin-bottom: 16px;
 }
 
 .task__author {
-  margin-bottom: 16px;
-  color: rgb(0, 112, 240);
+	margin-bottom: 16px;
+	color: rgb(0, 112, 240);
 }
 
 .task__title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 16px;
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 16px;
 }
 
 .task__decription {
-  font-size: 15px;
-  height: 200px;
-  overflow: hidden;
+	font-size: 15px;
+	height: 200px;
+	overflow: hidden;
 }
 
 .task__controls {
@@ -46,10 +46,10 @@
 }
 
 .task__send {
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #ddd;
-  border-radius: 4px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #ddd;
+	border-radius: 4px;
 }
