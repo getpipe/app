@@ -1,12 +1,17 @@
 import React, { Component } from "react";
 import "./style.css";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class Tabs extends Component {
 	render() {
 		return (
 			<div className="tabs">
-				<div className="tabs__item tabs__item_state_action">Task</div>
-				<div className="tabs__item">Map</div>
+				<Link to="/" style={{ textDecoration: 'none' }} >
+					<div className="tabs__item tabs__item_state_action">Task</div>
+				</Link>
+				<Link to="/about/" style={{ textDecoration: 'none' }} >
+					<div className="tabs__item">Map</div>
+				</Link>
 			</div>
 		);
 	}
