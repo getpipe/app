@@ -1,35 +1,35 @@
 .App {
-  background-color: #f3f3f3;
+	background-color: #f3f3f3;
 }
 
 .App__footer {
-  padding-top: 100px;
+	padding-top: 100px;
 }
 
 .App__layout {
-  width: 1171px;
-  margin: auto;
-  padding-bottom: 200px;
+	width: 1171px;
+	margin: auto;
+	padding-bottom: 200px;
 }
 
 .App__manifest { 
-  padding-top: 96px;
-  margin-bottom: 72px;
+	padding-top: 96px;
+	margin-bottom: 72px;
 }
 
 .App__tabs { 
-  padding-top: 96px;
+	padding-top: 96px;
 }
 
 .section {
-  display: grid;
-  grid-template-columns: 369px 369px 369px;
-  grid-row-gap: 36px;
-  grid-column-gap: 32px;
+	display: grid;
+	grid-template-columns: 369px 369px 369px;
+	grid-row-gap: 36px;
+	grid-column-gap: 32px;
 }
 
 .subtitle {
-  font-size: 40px;
-  color: #000;
-  margin-bottom: 40px;
+	font-size: 40px;
+	color: #000;
+	margin-bottom: 40px;
 }

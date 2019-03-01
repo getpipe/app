@@ -9,7 +9,7 @@ class Tabs extends Component {
 				<Link to="/" style={{ textDecoration: 'none' }} >
 					<div className="tabs__item tabs__item_state_action">Task</div>
 				</Link>
-				<Link to="/about/" style={{ textDecoration: 'none' }} >
+				<Link to="/map/" style={{ textDecoration: 'none' }} >
 					<div className="tabs__item">Map</div>
 				</Link>
 			</div>

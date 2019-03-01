@@ -16,7 +16,7 @@ function App() {
 				</div>
 				<div className="App__content">
 					<Route path="/" exact component={Task} />
-					<Route path="/about/" component={Map} />
+					<Route path="/map/" component={Map} />
 				</div>
 			</div>
 		</div>
