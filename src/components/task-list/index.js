@@ -7,7 +7,7 @@ import axios from "axios";
 const config = {
 	headers: {
 		Accept: "application/vnd.github.inertia-preview+json",
-		Authorization: "token c8f7a2ff8a66c77381ed23422dba2d572fbce10b"
+		Authorization: "token 6d9bc870bb68b6f995930d0d21ad6ce44990e6c2"
 	}
 };
 
@@ -39,19 +39,17 @@ class TaskList extends Component {
 	render() {
 		let tsks = this.state.items;
 		return (
-			<div className="section">
+			<div class="theme_color_whitepaper-default tpl-grid tpl-grid_s-ratio_1 tpl-grid_m-ratio_1-1 tpl-grid_l-ratio_1-1-1 tpl-grid_col-gap_half tpl-grid_row-gap_half">
 				{tsks.map(function(tsk) {
 					return (
-						<div className="col">
-							<Task
-								key={tsk.id}
-								type={tsk.type}
-								date={tsk.date}
-								author={tsk.author}
-								title={tsk.title}
-								description={tsk.description}
-							/>
-						</div>
+						<Task
+							key={tsk.id}
+							type={tsk.type}
+							date={tsk.date}
+							author={tsk.author}
+							title={tsk.title}
+							description={tsk.description}
+						/>
 					);
 				})}
 			</div>

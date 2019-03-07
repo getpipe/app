@@ -7,19 +7,14 @@ class TaskSection extends Component {
   render() {
     return (
       <div>
-        <div className="task-section">
-          <div className="task-section__title">Hot Tasks</div>
-          <div className="task-section__list">
+          <div className="tpl-layout__section decorator decorator_indent-b_xxxxxl">
+            <div className="text text_view_primary text_size_xxl text_weight_bold decorator decorator_indent-b_xl">Hot Tasks</div>
             <TopList />
           </div>
-        </div>
-
-        <div className="task-section">
-          <div className="task-section__title">Most Popular</div>
-          <div className="task-section__list">
+          <div className="tpl-layout__section">
+            <div className="text text_view_primary text_size_xxl text_weight_bold decorator decorator_indent-b_xl">Most Popular</div>
             <TaskList />
           </div>
-        </div>
       </div>
     );
   }

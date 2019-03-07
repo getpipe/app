@@ -10,7 +10,7 @@ import "./components/whitepaper-1.0.0.min.css";
 function App() {
   return (
     <Router>
-		<div className="App theme theme_color_whitepaper-default theme_size_default theme_space_default theme_font_museo theme_gap_default theme_breakpoint_default">
+		<div className="App theme theme_color_whitepaper-default theme_size_default theme_space_default theme_font_museo theme_gap_small theme_breakpoint_default">
 			<div className="App__layout">
 				<div className="App__tabs">
 					<Tabs />

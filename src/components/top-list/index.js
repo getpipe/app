@@ -36,7 +36,7 @@ class TopList extends Component {
 	render() {
 		let tsks = this.state.items;
 		return (
-			<div class="tpl-grid tpl-grid_s-ratio_1-1 tpl-grid_m-ratio_1-1-1 tpl-grid_l-ratio_1-1-1-1 tpl-grid_col-gap_third tpl-grid_row-gap_third">
+			<div class="theme_color_whitepaper-default tpl-grid tpl-grid_s-ratio_1 tpl-grid_m-ratio_1-1 tpl-grid_l-ratio_1-1-1 tpl-grid_col-gap_half">
 				{tsks.map(function(tsk) {
 					return (
 						<div className="tpl-grid__fraction" key={tsk.id}>
