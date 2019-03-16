@@ -6,6 +6,11 @@ import Map from "./components/map-screen";
 import Footer from "./components/footer";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./components/whitepaper-1.0.0.min.css";
+import { withNaming } from '@bem-react/classname';
+
+const cn = withNaming({ e: '__', m: '_' });
+
+
 
 function App() {
   return (
@@ -19,9 +24,7 @@ function App() {
 					<Route path="/" exact component={Task} />
 					<Route path="/map/" component={Map} />
 				</div>
-				<div className="App__footer">
-					<Footer />
-				</div>
+				<Footer />
 			</div>
 		</div>
     </Router>

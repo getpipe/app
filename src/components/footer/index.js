@@ -1,18 +1,16 @@
+
 import React, { Component } from "react";
 import "./style.css";
+import { withNaming } from '@bem-react/classname';
+
+const cn = withNaming({ e: '__', m: '_' });
+const cnFooter = cn('Footer');
 
 class Footer extends Component {
 	render() {
 		return (
-			<div className="footer">
-				<div className="footer__copiright">The Human Side of Technolog</div>
-				<div className="footer__info">
-					<div className="footer__col">
-						We need to come up with a new API for PostCSS
-					</div>
-					<div className="footer__col">
-						We need to come up with a new API for PostCSS
-					</div>
+			<div className={cnFooter({ size: 's' })}>
+				<div className={cnFooter('copyright', { size: 's' })}>
 				</div>
 			</div>
 		);
@@ -20,3 +18,9 @@ class Footer extends Component {
 }
 
 export default Footer;
+
+
+
+
+
+

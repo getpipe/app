@@ -3,11 +3,12 @@ import Task from "../task";
 import "./style.css";
 import axios from "axios";
 
+
 // конфиг для авторизации в git api
 const config = {
 	headers: {
 		Accept: "application/vnd.github.inertia-preview+json",
-		Authorization: "token 6d9bc870bb68b6f995930d0d21ad6ce44990e6c2"
+		Authorization: "token 2f934ad01edd9c644263ae87b1b573f3823931b0"
 	}
 };
 
@@ -39,17 +40,19 @@ class TaskList extends Component {
 	render() {
 		let tsks = this.state.items;
 		return (
-			<div class="theme_color_whitepaper-default tpl-grid tpl-grid_s-ratio_1 tpl-grid_m-ratio_1-1 tpl-grid_l-ratio_1-1-1 tpl-grid_col-gap_half tpl-grid_row-gap_half">
+			<div class="theme_color_whitepaper-default tpl-grid tpl-grid_col-gap_two-thirds tpl-grid_row-gap_two-thirds tpl-grid_m-columns_12">
 				{tsks.map(function(tsk) {
 					return (
-						<Task
-							key={tsk.id}
-							type={tsk.type}
-							date={tsk.date}
-							author={tsk.author}
-							title={tsk.title}
-							description={tsk.description}
-						/>
+						<div class="tpl-grid__fraction tpl-grid__fraction_m-col_4">
+							<Task
+								key={tsk.id}
+								type={tsk.type}
+								date={tsk.date}
+								author={tsk.author}
+								title={tsk.title}
+								description={tsk.description}
+							/>
+						</div>
 					);
 				})}
 			</div>
